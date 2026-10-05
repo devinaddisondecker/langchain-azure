@@ -8,7 +8,7 @@ requires-python = ">=3.10,<4.0"
 
 dependencies = [
   "azure-core>=1.38.0",
-  "azure-identity~=1.16",
+  "azure-identity~=1.26",
   "langchain-core>=1.0.1",
   "requests~=2.31",
 ]
@@ -63,7 +63,7 @@ constraint-dependencies = ["urllib3>=2.6.3", "cryptography>=46.0.7", "pyjwt>=2.1
 default-groups = ["typing"]
 
 [dependency-groups]
-codespell = ["codespell~=2.2"]
+codespell = ["codespell~=2.4"]
 dev = [
   "ipykernel>=6.29,<8.0",
   "langchain-core",
@@ -73,8 +73,8 @@ dev = [
 lint = [
   "cffi",
   "pytest>=9.0.3,<10",
-  "python-dotenv~=1.0",
-  "ruff>=0.5,<0.16",
+  "python-dotenv~=1.2",
+  "ruff>=0.16.10,<0.17",
 ]
 test = [
   "cffi",
@@ -82,10 +82,10 @@ test = [
   "langchain-core",
   "pytest>=9.0.3,<10",
   "pytest-asyncio>=1.0,<2",
-  "pytest-mock~=3.10",
+  "pytest-mock~=3.16",
   "pytest-watcher>=0.3.4,<0.7.0",
-  "python-dotenv~=1.0",
+  "python-dotenv~=1.2",
   "syrupy>=5.0,<6",
 ]
-test_integration = ["pytest>=9.0.3,<10", "python-dotenv~=1.0"]
-typing = ["langchain-core", "mypy>=1.10,<3.0", "types-requests~=2.31"]
+test_integration = ["pytest>=9.0.3,<10", "python-dotenv~=1.2"]
+typing = ["langchain-core", "mypy>=2.4.0,<3.0", "types-requests~=2.31"]
